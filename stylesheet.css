@@ -21,7 +21,7 @@ h2 {
 
 #banner { 
 	background: url(Assets/RingCloseUp.jpg) no-repeat fixed 50% 0; 
-	background-size: cover; 
+	background-size: contain; 
 	color: #fff; 
 	height: 100%; 
 	width: 100%; 
@@ -36,6 +36,7 @@ h2 {
 	margin-left: -12em; 
 	padding: 2em 0; 
 }
+
 
 nav {
 	position: absolute;
@@ -72,6 +73,18 @@ nav li a {
 	nav li a {
 		font-size: 14px;
 	}
+
+	#bannertext{
+		width: 12em; 
+		height: 10em;
+		position: fixed; 
+		top: 20%; 
+		left: 83%; 
+		border: .5em solid #fff; 
+		margin-left: -12em; 
+		padding: 2em 0; 
+	}
+
 
 }
 
