@@ -20,7 +20,7 @@ h2 {
 }
 
 #banner { 
-	background: url(RingCLoseUp.jpg) no-repeat fixed 50% 0; 
+	background: url(Assets/RingCLoseUp.jpg) no-repeat fixed 50% 0; 
 	background-size: cover; 
 	color: #fff; 
 	height: 100%; 
