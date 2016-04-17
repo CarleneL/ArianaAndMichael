@@ -1,0 +1,87 @@
+html { 
+	height: 100%; 
+}
+
+body { 
+	background: #FFF; 
+	font: 400 1.5em/1.5 "Droid Serif", serif; 
+	color: #111; 
+	text-align: center; 
+	height: 100%; 
+}
+
+h1 { 
+	font: 700 2.8em/1.2 "Droid Sans", sans-serif; 
+}
+
+h2 { 
+	font: 700 1.5em/1.5 "Droid Sans", sans-serif; 
+	margin: 1em 0; 
+}
+
+#banner { 
+	background: url(RingCLoseUp.JPG) no-repeat fixed 50% 0; 
+	background-size: cover; 
+	color: #fff; 
+	height: 100%; 
+	width: 100%; 
+}
+
+#bannertext { 
+	width: 24em; 
+	position: fixed; 
+	top: 20%; 
+	left: 50%; 
+	border: .5em solid #fff; 
+	margin-left: -12em; 
+	padding: 2em 0; 
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: transparent;
+}
+nav li {
+	display: inline-block;
+	padding: 15px 10px;
+}
+
+nav li a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.fixed {
+	position: fixed; 
+	top: 0; 
+	height: 70px; 
+	z-index: 1;
+	background-color: rgba(12,39,86,.7);
+}
+
+@media only screen and (max-width: 520px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 14px;
+	}
+
+}
+
+#content { 
+	max-width: 28em; 
+	text-align: justify; 
+	margin: 0 auto; 
+	padding: 2em; 
+}
+
+#content p { 
+	margin: 0 0 2em; 
+}

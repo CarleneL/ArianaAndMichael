@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif' rel='stylesheet' type='text/css'>
+		<link href='stylesheet.css' rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="banner">
+<!-- 			<div id="engagement_photo">
+				<img src='RingCloseUp.JPG'>
+			</div> -->
+			<div id="bannertext">
+				<h1>Ariana &amp; Michael</h1>
+				<p>2017</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="content">
+			<h2>About us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin pellentesque, est ut venenatis aliquam, lorem quam porttitor ligula, eget ultrices velit dui sed quam. Praesent vehicula placerat lectus. Nulla pede. Quisque a nulla quis massa pulvinar sagittis. Pellentesque neque massa, mattis vulputate, pellentesque nec, vehicula volutpat, purus. Proin pretium dui et nulla cursus eleifend. Aenean aliquam urna eget urna. Vestibulum euismod elit. Donec eget augue sit amet neque elementum pretium. Proin posuere lacus id lacus. Duis vel justo suscipit neque ornare iaculis.</p>
+			<p>Ut urna urna, rhoncus eget, vestibulum tempus, venenatis non, nunc. Nunc consequat quam in nulla. Praesent feugiat posuere orci. Sed ac ante. Mauris pellentesque massa vitae ante mattis bibendum. Quisque dapibus lectus eu eros. Nulla facilisi. Praesent hendrerit egestas erat. Suspendisse at velit. Quisque mollis feugiat est. Curabitur ut leo. Cras auctor semper augue. Pellentesque leo pede, tempus sed, ornare in, venenatis sed, nisl. Quisque est velit, eleifend vitae, mollis ac, adipiscing at, eros. Mauris velit. Etiam nec lorem. Vestibulum pellentesque ligula a velit. Maecenas felis metus, suscipit et, eleifend vel, accumsan vitae, magna. Phasellus ut justo vel magna congue laoreet.</p>
+		</div>
+
+		<script>
+			function EasyPeasyParallax() {
+				scrollPos = $(this).scrollTop();
+				$('#banner').css({
+					'background-position' : '50% ' + (-scrollPos/4)+"px"
+				});
+				$('#bannertext').css({
+					'margin-top': (scrollPos/4)+"px",
+					'opacity': 1-(scrollPos/350)
+				});
+			}
+			
+			$(document).ready(function(){
+				$(window).scroll(function() {
+					EasyPeasyParallax();
+				});
+				$(window).bind('scroll', function() {
+				   var navHeight = $( window ).height() - 40;
+						 if ($(window).scrollTop() > navHeight) {
+							 $('nav').addClass('fixed');
+						 }
+						 else {
+							 $('nav').removeClass('fixed');
+						 }
+				});
+			});
+
+
+		</script>
+
+	</body>
+
+</html>
