@@ -25,6 +25,10 @@ h2 {
 	color: #fff; 
 	height: 100%; 
 	width: 100%; 
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
 }
 
 #banner .mobile{
@@ -85,14 +89,11 @@ nav li a {
 	body {
 		width: 500px;
 	}
-
+/*
 	#banner { 
 		background: rgba(12,39,86,.7)
 	} 
-
-	#banner .mobile {
-		display: inline;
-	}
+*/
 
 	#bannertext{
 		width: 24em; 
