@@ -20,12 +20,14 @@ h2 {
 }
 
 #banner { 
-	background: url(Assets/RingCloseUp.jpg) no-repeat fixed 50% 0; 
+	/*background: url(Assets/RingCloseUp.jpg) no-repeat fixed 50% 0; */
 	/*background: url(Assets/RingCloseUp.jpg) no-repeat center center fixed; */
-	background-size: cover; 
+	background: url(Assets/RingCloseUp.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	width: 100%;
 	color: #fff; 
 	height: 100%; 
-	width: 100%; 
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -93,7 +95,11 @@ nav li a {
 	}
 
 	#banner { 
-		background: url(Assets/restaurant_blur.jpg) no-repeat fixed 50% 0; 
+		background: url(Assets/RingCloseUp_mobile.jpg); 
+		background-repeat: no-repeat;
+	background-size: 100% 100%; 
+	width: 100%;
+	color: #fff; 
 	} 
 
 
