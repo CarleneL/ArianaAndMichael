@@ -20,13 +20,13 @@ h2 {
 }
 
 #banner { 
-	/*background: url(Assets/RingCloseUp.jpg) no-repeat fixed 50% 0; */
-	background: url(Assets/RingCloseUp.jpg) no-repeat center center fixed; 
+	background: url(Assets/RingCloseUp.jpg) no-repeat fixed 50% 0; 
+	/*background: url(Assets/RingCloseUp.jpg) no-repeat center center fixed; */
 	background-size: cover; 
 	color: #fff; 
 	height: 100%; 
 	width: 100%; 
-	  -webkit-background-size: cover;
+	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 
@@ -89,12 +89,13 @@ nav li a {
 
 	body {
 		width: 500px;
+		height: 100%;
 	}
-/*
+
 	#banner { 
-		background: rgba(12,39,86,.7)
+		background: url(Assets/restaurant_blur.jpg) no-repeat fixed 50% 0; 
 	} 
-*/
+
 
 	#bannertext{
 		width: 24em; 
