@@ -107,8 +107,8 @@ nav li a {
 		width: 24em; 
 		height: 12em;
 		position: fixed; 
-		top: 20%; 
-		left: 40%; 
+		top: 15%; 
+		left: 250px; 
 		border: .3em solid #fff; 
 		margin-left: -12em; 
 		padding: 2em 0; 
