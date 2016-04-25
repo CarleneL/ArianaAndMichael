@@ -1,5 +1,5 @@
-html { 
-	height: 100%; 
+html, body { 
+	height: 100vh; 
 }
 
 body { 
@@ -7,7 +7,7 @@ body {
 	font: 400 1.5em/1.5 "Raleway", serif; 
 	color: #111; 
 	text-align: center; 
-	height: 100%; 
+
 }
 
 
@@ -21,18 +21,22 @@ h2 {
 }
 
 #banner { 
+	 height:100%;
 	/*background: url(Assets/RingCloseUp.jpg) no-repeat fixed 50% 0; */
 	/*background: url(Assets/RingCloseUp.jpg) no-repeat center center fixed; */
 	background: url(Assets/RingCloseUp.jpg);
 	background-repeat: no-repeat;
-	background-size: 100% 100%; 
+	/*background-size: 100% 100%; */
+	 background-position: center center;
+
+	background-size: cover;
 	width: 100%;
 	color: #fff; 
 	/*height: 100%; */
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  min-height: 100%;
+ 
 
 }
 
@@ -106,9 +110,11 @@ nav li a {
 	#banner { 
 		background: url(mobile_landing.jpg); 
 		background-repeat: no-repeat;
-	background-size: 100% 100%; 
-	width: 100%;
-	color: #fff; 
+	/*background-size: 100% 100%; */
+		background-size: cover;
+		width: 100%;
+		color: #fff; 
+		height: 100vh;
 	} 
 
 
