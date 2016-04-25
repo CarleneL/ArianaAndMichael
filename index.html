@@ -51,7 +51,7 @@
 		<!-- <div id="content">
 			<a id="story" class="smooth"></a>
 			<div class = "container">
-				<div class = "row" style="display:none">
+				<div class = "row">
 					<div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<ul class="pics">
 							<li><a href="#bigDay" title="Sports"><img id="sparkler" src="Assets/AnMSparkler.jpeg" /></a></li>
@@ -67,6 +67,31 @@
 				</div>
 			</div>
 
+		</div> -->
+
+		<div id="theStory" >
+			<a id="theStory" class="smooth"></a>
+			<div class="details">
+				<div class ="row">
+					<div class="col-md-12">
+						<h1> Our Story</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 photo">
+						<!-- <ul class="pics">
+							<li><a href="#bigDay" title="Sports"><img id="sparkler" src="Assets/AnMSparkler.jpeg" /></a></li>
+						</ul> -->
+						 <!-- <img src="Assets/AnM_bw.jpg" class='story_photo'> -->
+						 <!-- <img src="Assets/AnMSparkler.jpeg" class='story_photo'> -->
+						 <img src="Assets/AnMCasual.jpg" class='story_photo'>
+					</div>
+					<div class="col-md-6 about" style="margin-top:5%">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin pellentesque, est ut venenatis aliquam, lorem quam porttitor ligula, eget ultrices velit dui sed quam. Praesent vehicula placerat lectus. Nulla pede. Quisque a nulla quis massa pulvinar sagittis. Pellentesque neque massa, mattis vulputate, pellentesque nec, vehicula volutpat, purus. Proin pretium dui et nulla cursus eleifend. Aenean aliquam urna eget urna. Vestibulum euismod elit. Donec eget augue sit amet neque elementum pretium. Proin posuere lacus id lacus. Duis vel justo suscipit neque ornare iaculis.</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<div class="cd-fixed-bg cd-bg-1">
@@ -79,7 +104,7 @@
 			</div>
 		</div>
 
-		<div id="bigDay" style="display:none">
+		<div id="bigDay" >
 			<a id="bigDay" class="smooth"></a>
 			<div class="details">
 				<h2>Details about the venue</h2>
@@ -91,14 +116,14 @@
 		<div id="photos">
 			<a id="photos" class="smooth"></a>
 
-		</div> -->
+		</div>
 
 		<script>
 			function EasyPeasyParallax() {
 				scrollPos = $(this).scrollTop();
-				$('#banner').css({
-					'background-position' : '50% ' + (-scrollPos/4)+"px"
-				});
+				// $('#banner').css({
+				// 	'background-position' : '50% ' + (-scrollPos/4)+"px"
+				// });
 				$('#bannertext').css({
 					'margin-top': (scrollPos/4)+"px",
 					'opacity': 1-(scrollPos/350)
@@ -109,16 +134,27 @@
 				$(window).scroll(function() {
 					EasyPeasyParallax();
 				});
-				$(window).bind('scroll', function() {
-				   var navHeight = $( window ).height() - 20;
-						 if ($(window).scrollTop() > navHeight) {
-							 $('nav').addClass('fixed');
-						 }
-						 else {
-							 $('nav').removeClass('fixed');
-						 }
-				});
+			// 	$(window).bind('scroll', function() {
+			// 	   var navHeight = $( window ).height() - 20;
+			// 			 if ($(window).scrollTop() > navHeight) {
+			// 				 $('nav').addClass('fixed');
+			// 			 }
+			// 			 else {
+			// 				 $('nav').removeClass('fixed');
+			// 			 }
+			// 	
+
+
+
+
+			// $('#story_photo').on({
+			// 	    'click': function(){
+			// 	        $('#story_photo').attr('src','Assets/AnMSparkler.jpeg');
+			// 	    }
+			// 	});
 			});
+
+
 
 
 		</script>
