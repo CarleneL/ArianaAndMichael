@@ -148,9 +148,7 @@ nav li a {
 	margin: 0 0 2em; 
 }
 
-.details {
-	margin-top: 5%;
-}
+
 
 /*photo */
 .pics {
@@ -204,25 +202,30 @@ nav li a {
 	left:60%;
 }
 
-#sparkler{
-	height: 400px;
-	width: 450px;
-}
 
+
+#theStory {
+	width: 100%; 
+	background: url(Assets/crossword.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+}
 .photo {
   width:200px;
   height:200px;
-  margin:50px auto;
-  position:relative;
-  margin-right: 100px;
-  margin-left: 100px;
+  float: none;
+  margin: auto;
+/*  margin-right: 100px;
+  margin-left: 100px;*/
 }
 
-.photo img {
+/*.photo img {
   border-top:8px solid white;
   border-right:8px solid white;
   border-left:8px solid white;
-  border-bottom:25px solid white;
+  border-bottom:35px solid white;
   box-shadow:0px 0px 4px rgba(0,0,0,1);
   position:relative;
   z-index:10;
@@ -241,7 +244,7 @@ nav li a {
   border-top:8px solid white;
   border-right:8px solid white;
   border-left:8px solid white;
-  border-bottom:25px solid white;
+  border-bottom:35px solid white;
   box-shadow:0px 0px 4px rgba(0,0,0,1);
   position:absolute;
   top:0;
@@ -270,15 +273,69 @@ nav li a {
    -webkit-transform: rotate(2.5deg);
   transform: rotate(2.5deg);
   
+}*/
+.photo{
+	position: relative;
+}
+.photo img{
+	width: 200px;
+	height: 200px;
 }
 
+.photo img{
+/*padding: 6px 8px 10px 8px; /*size of the frame*/
+/*give the frame's background colour a gradient*/
+/*background: #eee6d8; *//*fallback colour for browsers that don't support gradients*/
+/*background: -webkit-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+background: -moz-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+background: -o-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+background: -ms-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);*/
+/*give the Polaroids a small drop shadow*/
+/*-webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+-moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);*/
+
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+
+.photo img{
+	-webkit-transform:rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+	-webkit-backface-visibility:hidden; /*prevent rotated text in the caption being jagged in Chrome and Safari*/
+}
+
+.photo p{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font: 400 18px/1 'Shadows Into Light', cursive;
+  color: #888;
+  z-index: 100;
+  /*top: 50px;*/
+
+
+}
+
+.about {
+	float:none;
+	margin: auto;
+}
 
 @media only screen and (max-width: 520px) {
 	#content{
 		width:100%;
 	}
 
-	.photos{
+	.photo{
 		margin-left: 150px;
 	}
 
@@ -287,6 +344,8 @@ nav li a {
 	}
 
 }
+
+
 /*scrolling picture on the About page */
 .cd-fixed-bg {
 	/*min-height: 100%;*/
