@@ -23,15 +23,15 @@ h2 {
 }
 
 #banner { 
-	 height:100%;
-	 min-height: 100%;
+	 /*height:100%;
+	 min-height: 100%;*/
 	/*background: url(Assets/RingCloseUp.jpg) no-repeat fixed 50% 0; */
 	/*background: url(Assets/RingCloseUp.jpg) no-repeat center center fixed; */
 	background: url(Assets/RingCloseUp.jpg);
 	background-repeat: no-repeat;
 	/*background-size: 100% 100%; */
 	 background-position: center center;
-
+	 background-attachment: fixed;
 	background-size: cover;
 	width: 100%;
 	color: #fff; 
@@ -97,6 +97,10 @@ nav li a {
 
 @media only screen and (max-width: 520px) {
 
+	nav {
+		position: fixed;
+	}
+
 	nav li {
 		padding: 24px 4px;
 	}
@@ -110,16 +114,16 @@ nav li a {
 		height: 900px;
 	}
 
-	#banner { 
+	/*#banner { 
 		background: url(mobile_landing.jpg); 
 		background-repeat: no-repeat;
-	/*background-size: 100% 100%; */
+	background-size: 100% 100%; 
 		background-size: cover;
 		width: 100%;
 		height: 800px;
 		color: #fff; 
 		height: 100vh;
-	} 
+	} */
 
 
 	#bannertext{
@@ -210,11 +214,12 @@ nav li a {
 
 }
 
+
 /* accordion */
 .accordion {
   width: 100%;
   max-width: 1080px;
-  height: 250px;
+  height: 400px;
   overflow: hidden;
   margin: 50px auto;
 }
@@ -232,7 +237,7 @@ nav li a {
   vertical-align: bottom;
   position: relative;
   width: 16.666%;
-  height: 250px;
+  height: 370px;
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 500ms ease;
@@ -246,7 +251,7 @@ nav li a {
 
 .accordion ul li div a {
   display: block;
-  height: 250px;
+  height: 400px;
   width: 100%;
   position: relative;
   z-index: 3;
@@ -294,11 +299,11 @@ nav li a {
 
 .accordion ul li:nth-child(3) { background-image: url("Assets/AnMSparkler.jpeg"); }
 
-.accordion ul li:nth-child(4) { background-image: url("Assets/restaurant_blur.jpg"); }
+.accordion ul li:nth-child(4) { background-image: url("Assets/cheers.jpg"); }
 
-.accordion ul li:nth-child(5) { background-image: url("Assets/AnMSparkler.jpeg"); }
+.accordion ul li:nth-child(5) { background-image: url("Assets/NewYears.jpg"); }
 
-.accordion ul li:nth-child(6) { background-image: url("Assets/AnMSparkler.jpeg"); }
+.accordion ul li:nth-child(6) { background-image: url("Assets/restaurant_blur.jpg"); }
 
 .accordion ul:hover li { width: 8%; }
 
@@ -312,9 +317,13 @@ nav li a {
   transform: translateX(0);
 }
 
+#carousel{
+	display: none;
+}
+
 @media screen and (max-width: 600px) {
 
-.accordion { height: auto; }
+/*.accordion { height: auto; }
 
 .accordion ul li,
 .accordion ul li:hover,
@@ -326,7 +335,14 @@ nav li a {
   width: 100%;
   -webkit-transition: none;
   transition: none;
-}
+}*/	
+	.accordion{
+		display: none;
+	}
+
+	#carousel{
+		display: inline;
+	}
 
 }
 
